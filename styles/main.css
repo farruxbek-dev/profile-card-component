@@ -1,0 +1,70 @@
+#container {
+  width: 21rem;
+  height: 22.4875rem;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+}
+#bg {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 132px;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-bottom: 4rem;
+}
+#profile-image {
+  background-image: url(../images/image-victor.jpg);
+  width: 5.625rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  top: 80px;
+  background-size: contain;
+}
+#name {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  margin-right: 4px;
+}
+#num {
+  color: hsl(227, 10%, 46%);
+}
+p {
+  font-size: 0.75em;
+  color: #6a6f81;
+  margin-top: 6px;
+  margin-bottom: 1.25rem;
+}
+#stats {
+  margin-top: 1rem;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nums {
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 0.25rem;
+}
+.stat-name {
+  font-size: 0.5em;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 374px) {
+  #container {
+    width: 290px;
+  }
+}
